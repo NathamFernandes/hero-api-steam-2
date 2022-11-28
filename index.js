@@ -14,12 +14,12 @@ app.get('/', (req, res) => {
 })
 
 app.get('/usuarios/:idusuario', async (req, res) => {
-    let url = `http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=730&key=0D372211EAD5CDB42F5A686BF51766CC&steamid=${req.params.idusuario}`
+    let url = 'http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=730&key=D01C2D2244E655C8B4BCBF3F43A38ED2&steamid=' + req.params.idusuario
     const options = {
         method: 'GET',
         headers: {
             'X-RapidAPI-Host': 'api.steampowered.com',
-            'X-RapidAPI-Key': '0D372211EAD5CDB42F5A686BF51766CC'
+            'X-RapidAPI-Key': 'D01C2D2244E655C8B4BCBF3F43A38ED2'
         }
     };
 
